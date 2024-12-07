@@ -39,7 +39,7 @@ npm start
 ```
  4.Open the application in your browser at [http://localhost:3000](http://localhost:3000).
 
-5.Live Link:
+5.Live Link: [Food-Bible](https://cybersky-it-solution.vercel.app/)
 
 ## Tech Stack
 ->[React+Vite](https://vite.dev/) - Library 
