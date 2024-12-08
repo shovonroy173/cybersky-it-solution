@@ -10,6 +10,7 @@ const HomeCenterContainerSidebar = () => {
           <img src={item.src} alt="" />
         </div>
       ))}
+      <div className="w-6 h-6  rounded-full bg-orange-600 text-center text-white">...</div>
     </div>
   );
 };

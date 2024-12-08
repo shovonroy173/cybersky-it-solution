@@ -81,13 +81,13 @@ const HomeLeftContainer = () => {
       {/* list title start */}
 
       {/* tab content start */}
-      <div className="overflow-y-auto h-[400px] pr-2 transition-all duration-300 ease-in-out">
+      <div className="overflow-y-auto max-h-[400px] pr-2 transition-all duration-300 ease-in-out">
         {items.length !== 0 && open ? (
           items.map((item) => (
             <div
               key={item.id}
               className={`flex gap-2 
-                // select === index
+               
                   hover:border hover:border-orange-700 
                     border dark:border-gray-700 border-white rounded-lg
               transition-all duration-300 ease-in-out m-1   p-1`}
