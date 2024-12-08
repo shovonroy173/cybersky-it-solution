@@ -20,7 +20,7 @@ const Navbar = () => {
       <div>
         <Link to="/" className="text-orange-600 font-extrabold flex gap-2">
           <img src="./logo.png" alt="" className="w-6 h-6"/>
-          <p>Food-Bible <span>.</span></p>
+          <p className="hidden lg:block transition-all duration-300 ease-in-out">Food-Bible <span>.</span></p>
         </Link>
       </div>
       {/* logo end */}

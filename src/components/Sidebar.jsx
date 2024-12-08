@@ -1,10 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { urls } from "../assets/data";
 import IconBg from "./IconBg";
-console.log(urls);
 
 const Sidebar = () => {
-
   const location = useLocation();
   
   return (
