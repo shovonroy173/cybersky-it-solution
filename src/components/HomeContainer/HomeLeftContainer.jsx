@@ -85,16 +85,16 @@ const HomeLeftContainer = () => {
         {items.length !== 0 && open ? (
           items.map((item) => (
             <div
-              key={item.id}
-              className={`flex gap-2 
-               
-                  hover:border hover:border-orange-700 
-                    border dark:border-gray-700 border-white rounded-lg
-              transition-all duration-300 ease-in-out m-1   p-1`}
-              onClick={() => (
-                 setSearchVal(item.title), setOpen(false)
-              )}
-            >
+  key={item.id}
+  className={`flex gap-2 
+    border border-white rounded-lg dark:border-gray-700
+    hover:border-orange-700 dark:hover:border-orange-700
+    transition-all duration-300 ease-in-out m-1 p-1`}
+  onClick={() => (
+    setSearchVal(item.title), setOpen(false)
+  )}
+>
+
               <div className="w-10 h-10">
                 <img src={item.img} alt="" />
               </div>

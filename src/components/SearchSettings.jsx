@@ -14,7 +14,7 @@ const SearchSettings = () => {
     <div>
       {/* drop down button  start */}
       <div
-        className="text-orange-600 flex justify-between items-center text-md font-medium rounded-md px-6 py-3 bg-white"
+        className="text-orange-600 flex justify-between items-center text-md font-medium rounded-md px-6 py-3 dark:bg-gray-700 bg-white"
         onClick={() => handleOpen()}
       >
         <div className="flex justify-center items-center gap-2">
