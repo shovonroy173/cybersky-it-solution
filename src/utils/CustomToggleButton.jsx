@@ -9,7 +9,7 @@ const CustomToggleButton = ({isToggled , handleToggle}) => {
       </span>
       <div
         className={`relative w-8 h-4 border  rounded-full cursor-pointer transition-colors duration-300 ${
-          isToggled ? "bg-orange-600 border-orange-600" : "bg-white border-gray-100"
+          isToggled ? "bg-orange-600 border-orange-600" : "bg-white border-gray-200"
         }`}
         onClick={handleToggle}
       >

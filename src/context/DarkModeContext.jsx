@@ -8,11 +8,10 @@ export const DarkModeContext = createContext();
 // Provider component
 export const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
-    // Initialize from localStorage or default to light mode
     return localStorage.getItem('darkMode') === 'true' || false;
   });
 
-  // Update the `class` on `html` when dark mode changes
+
   useEffect(() => {
     const root = window.document.documentElement;
     if (darkMode) {
@@ -20,10 +19,10 @@ export const DarkModeProvider = ({ children }) => {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem('darkMode', darkMode); // Persist in localStorage
+    localStorage.setItem('darkMode', darkMode); 
   }, [darkMode]);
 
-  // Toggle dark mode
+
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };

@@ -18,16 +18,19 @@ const CustomSlider = ({ value, handleValueChange }) => {
         step={1}
         aria-label="Custom Slider"
       >
-        {/* Track */}
+        {/* track start */}
         <Slider.Track className="relative bg-gray-300 rounded-full h-1 w-full">
           <Slider.Range className="absolute h-full bg-orange-600 rounded-full" />
         </Slider.Track>
+        {/* track end */}
 
-        {/* Thumb */}
+        {/* thumb start */}
         <Slider.Thumb
           className="block w-3 h-3 bg-orange-600 rounded-full shadow-lg focus:outline-none focus:ring-1 focus:ring-orange-300"
           aria-label="Slider Thumb"
         />
+        {/* thumb end */}
+
       </Slider.Root>
     </div>
   );

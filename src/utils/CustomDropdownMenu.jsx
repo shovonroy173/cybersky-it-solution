@@ -12,14 +12,16 @@ const CustomDropdownMenu = ({selectedItem , handleSelect}) => {
 </div>
     
     <DropdownMenu.Root>
-      {/* Trigger Button */}
+      {/* trigger button start */}
       <DropdownMenu.Trigger asChild>
         <div className="px-4 py-2 bg-gray-100 text-gray-800 rounded-lg text-sm font-medium flex justify-between items-center">
           <p>All Vitamin</p>
           <IoChevronDown />
         </div>
       </DropdownMenu.Trigger>
+      {/* trigger button end */}
 
+      {/* content start */}
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           className="dark:bg-gray-700 bg-white rounded-lg p-2 w-48 transition-all duration-300 ease-in-out"
@@ -37,6 +39,8 @@ const CustomDropdownMenu = ({selectedItem , handleSelect}) => {
 
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
+      {/* content end */}
+
     </DropdownMenu.Root>
     </div>
   );

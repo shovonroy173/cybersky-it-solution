@@ -16,11 +16,16 @@ const Navbar = () => {
       className="w-full h-14  flex justify-between items-center fixed top-0 px-5 dark:bg-gray-700 bg-white z-20 transition-all duration-300 ease-in-out
     "
     >
+      {/* logo start */}
       <div>
-        <Link to="/" className="text-orange-600 font-extrabold">
-          Logo <span>.</span>
+        <Link to="/" className="text-orange-600 font-extrabold flex gap-2">
+          <img src="./logo.png" alt="" className="w-6 h-6"/>
+          <p>Food-Bible <span>.</span></p>
         </Link>
       </div>
+      {/* logo end */}
+
+      {/* search start */}
       <div className="flex items-center relative border border-gray-300 p-1 w-1/2 lg:w-1/4 rounded-md">
         <input
           type="text"
@@ -31,6 +36,9 @@ const Navbar = () => {
           <IconBg active={true} icon={<CiSearch />} />
         </div>
       </div>
+      {/* search end*/}
+
+      {/* menu start */}
       <div className="flex justify-between gap-2 items-center">
         <DarkModeToggle />
         <div className="hidden lg:block">
@@ -39,6 +47,7 @@ const Navbar = () => {
 
         <IconBg active={active} changeIconBG={changeIconBG} icon={<FaBars />} />
       </div>
+      {/* menu end */}
     </div>
   );
 };

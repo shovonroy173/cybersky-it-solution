@@ -4,7 +4,7 @@ import IconBg from "./IconBg";
 console.log(urls);
 
 const Sidebar = () => {
-  // const navigate = useNavigation();
+
   const location = useLocation();
   
   return (

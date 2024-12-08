@@ -1,9 +1,9 @@
 import ComingSoon from "../utils/ComingSoon"
 
-const Category = () => {
+const Message = () => {
   return (
     <div><ComingSoon/></div>
   )
 }
 
-export default Category
+export default Message
